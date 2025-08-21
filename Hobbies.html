@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            padding: 3rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            color: white;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        /* Cards */
+        .card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            object-fit: cover;
+            height: 220px;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .card-text {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Gradient Button (no animation) */
+        .btn-gradient {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border: none;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #764ba2, #667eea);
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 1.2rem 0;
+            margin-top: 3rem;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container text-center">
+            <h1>🌟 Hobbies & Interests 🌟</h1>
+        </div>
+    </header>
+
+    <!-- Hobby Cards -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+
+                <!-- Hobby 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="coding.jpg" class="card-img-top" alt="Coding">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">💻 Coding</h5>
+                            <p class="card-text">Coding lets me turn ideas into functional apps and websites, blending
+                                creativity with logic.</p>
+                            <a href="#" class="btn btn-gradient">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobby 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="books.jpeg" class="card-img-top" alt="Reading">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">📚 Reading</h5>
+                            <p class="card-text">Reading books opens doors to imagination, knowledge, and new
+                                perspectives.</p>
+                            <a href="#" class="btn btn-gradient">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobby 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="sports.jpg" class="card-img-top" alt="Sports">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">⚽ Sports</h5>
+                            <p class="card-text">Playing sports keeps me active, builds teamwork, and improves focus.
+                            </p>
+                            <a href="#" class="btn btn-gradient">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Website | Designed with ❤️ using Bootstrap</p>
+    </footer>
+
+</body>
+
+</html>
