@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel and Scrollspy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        img {
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="coding.jpg" alt="coding" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="tech.jpg" alt="tech" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="books.jpeg" alt="books" style="width:100%;">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- activity2 -->
+    <div data-spy="scroll" data-target="#myScrollspy" data-offset="100">
+        <div class="container">
+            <h2>Scrollspy</h2>
+            <nav id="myScrollspy" class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#section41">Section 4-1</a></li>
+                            <li><a href="#section42">Section 4-2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-sm-9">
+                <div id="section1">
+                    <h4>Section 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod possimus iste
+                        exercitationem nostrum labore eveniet repudiandae sit ducimus tenetur aliquid debitis ut quos
+                        mollitia nulla dicta, minima quibusdam nisi at ex facere nemo? Sapiente omnis officiis labore ut
+                        laborum eaque at temporibus quam sed quasi earum est, minima nemo enim dolorum dolore tenetur
+                        numquam magni culpa reprehenderit corrupti impedit. Autem non, animi praesentium neque veritatis
+                        cumque recusandae totam perspiciatis, quas et esse ab aliquid qui hic facere veniam doloribus.
+                        Tempore fuga in accusamus eaque quam possimus quisquam ullam, magnam consectetur repellendus
+                        reprehenderit aspernatur! Animi provident nesciunt repellat consequuntur excepturi.</p>
+                </div>
+                <div id="section2">
+                    <h4>Section 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab vel, magnam aperiam ipsam at
+                        voluptatum impedit saepe assumenda veniam doloremque consequatur. Animi fuga magnam, distinctio
+                        dicta consequuntur aspernatur numquam non explicabo nisi asperiores officia doloremque
+                        recusandae voluptas iusto porro sequi aut. Eaque fugit quos quidem reprehenderit dolores,
+                        pariatur impedit iusto voluptates soluta! Error, delectus nostrum adipisci voluptatem, illo
+                        cupiditate magni, itaque rem quo reprehenderit similique. Similique minima distinctio quisquam
+                        sint quae quis necessitatibus numquam atque mollitia natus voluptatum maiores ipsum aperiam
+                        quibusdam corporis consequuntur veritatis ullam asperiores maxime magnam vero doloribus, culpa
+                        veniam nihil. Quas autem veniam recusandae quo architecto.</p>
+                </div>
+                <div id="section3">
+                    <h4>Section 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio rerum accusamus totam facere,
+                        tempore ad, similique dolorem sit placeat eligendi suscipit necessitatibus ea magnam nesciunt
+                        doloremque labore distinctio ducimus quod! Non ipsam placeat atque dignissimos sequi illum
+                        sapiente saepe, a consequatur cupiditate, quisquam, fuga animi repellat. Aut laborum vel id
+                        minima similique excepturi voluptate iste accusamus voluptas veritatis quae sapiente placeat,
+                        deserunt animi unde. Mollitia dolore numquam saepe illo facere distinctio labore expedita
+                        molestiae, doloremque, rem, ad beatae dolor excepturi vero. Officiis ipsum eaque iure, porro
+                        suscipit dolor ullam eligendi consequatur repellat? Minima aspernatur, accusamus dicta
+                        perferendis autem quibusdam?</p>
+                </div>
+                <div id="section41">
+                    <h4>Section 4-1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam quia unde quam, dolorem veniam
+                        debitis, enim eligendi ipsa ipsum officia placeat nesciunt voluptates delectus recusandae
+                        maiores accusantium iste incidunt eaque non commodi aliquam, velit ducimus. Excepturi similique
+                        deleniti debitis ea ut veritatis. Earum atque enim odit ipsa? Expedita, fuga eius! Vero
+                        laboriosam nemo iure, nobis eveniet nam quasi. Unde tenetur repellendus culpa nihil est a
+                        corrupti mollitia incidunt voluptates temporibus ex, eos, ipsum cum sit maiores minima,
+                        quibusdam sint. Cum velit reprehenderit quod repudiandae ut quibusdam laudantium neque vel,
+                        repellendus quidem sapiente ad similique nesciunt tempora sit maxime modi. </p>
+                </div>
+                <div id="section42">
+                    <h4>Section 4-2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, amet eveniet! Itaque laudantium
+                        quos ut debitis! Dolorem magnam ducimus tempore eligendi rem quibusdam harum totam iusto, rerum
+                        assumenda quis incidunt fugiat nobis accusantium voluptatibus qui dolore a necessitatibus. Nisi
+                        et ad cumque quos quidem tempore corrupti excepturi neque, voluptas labore iste, voluptate
+                        doloribus molestiae iusto a aperiam obcaecati provident rerum quo atque nulla voluptatem porro
+                        possimus laudantium. Facere commodi, provident doloremque obcaecati minima exercitationem odio
+                        magnam nobis laboriosam dicta, quidem vero sit soluta assumenda cupiditate amet consequuntur
+                        consectetur, in tempore dolorum deserunt ex. Nulla, vero. Aliquam dolor molestiae nulla
+                        cupiditate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
