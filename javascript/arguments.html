@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Arguments sum in java script</title>
+</head>
+
+<body>
+    <p>Sum of argumnets </p>
+    <p id="sum"></p>
+    <script>
+        function sumAll() {
+
+            var sum = 0;
+            for (i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        document.getElementById("sum").innerHTML = sumAll(13, 6, 89, 23, 134);
+
+
+        // maths trignometry values
+        var value1 = Math.sin(25);
+        document.write("Sin 25 is  : " + value1 + "<br>")
+        var value2 = Math.tan(25);
+        document.write("Tan 25 is  : " + value2 + "<br>")
+        var value3 = Math.cos(25);
+        document.write("Cos 25 is  : " + value3git + "<br>")
+    </script>
+</body>
+
+</html>
