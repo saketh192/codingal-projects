@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Errors in JavaScript</title>
+</head>
+
+<body>
+    <h1>JavaScript Error Handling Using Arrow Function</h1>
+    <p>Hello! I am going to use <b>catch</b> to display an error.</p>
+    <p id="result"></p>
+
+    <script>
+        // Arrow function to multiply two numbers
+        const product = (a, b) => a * b;
+
+        try {
+            // This will throw an error because 'a' is not defined
+            document.getElementById("result").innerHTML = a;
+        } catch (err) {
+            // Display the error message
+            //  It will display that "a" is not defined
+            document.getElementById("result").innerHTML = "Error: " + err.message;
+        }
+    </script>
+</body>
+
+</html>
