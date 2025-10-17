@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myform" onsubmit="validateform()">
+        Name: <input type="text" name="fname">
+        Age: <input type="number" id="id1" min="18">
+        <input type="submit" value="login">
+        <p id="message"></p>
+
+    </form>
+    <script>
+        function validateform() {
+            var x = document.forms["myform"]["fname"], value;
+            var y = document.forms["myform"]["id1"], value;
+            if (x == "" || y == "") {
+                alert("Name/age should be filled up!");
+                return false;
+            }
+            else
+                alert("Successfully logged in ");
+        }
+
+    </script>
+</body>
+
+</html>
