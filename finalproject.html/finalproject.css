@@ -25,11 +25,54 @@ nav {
     background-color: #575757;
 }
 
+input[type="text"] {
+    padding: 6px 29px;
+    margin: 20px;
+    float: right;
+}
+
 .logo {
     float: left;
     color: white;
     font-size: 24px;
     padding: 14px 20px;
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #333;
+}
+
+.hero {
+    background-color: gray;
+    height: 50rem;
+    width: 200rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url('https://picsum.photos/1920/1080?blur=3');
+    position: relative;
+}
+
+
+
+
+.hero-content {
+    position: relative;
+
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h1 {
     font-weight: bold;
 }
