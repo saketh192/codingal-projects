@@ -72,3 +72,37 @@ input[type="text"] {
     font-size: 3.5rem;
     font-weight: bold;
 }
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+social-section {
+    background-color: #212529;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+
+}
+
+.social-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+
+}
+
+.social-icons a:hover {
+    color: #0d6efd;
+    /* Bootstrap blue */
+
+}
