@@ -78,7 +78,7 @@ footer {
     width: 100%;
 }
 
-social-section {
+.social-section {
     background-color: #212529;
     color: white;
     padding: 60px 0;
@@ -105,4 +105,55 @@ social-section {
     color: #0d6efd;
     /* Bootstrap blue */
 
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7096cff8;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    background: #000;
+    color: rgb(0, 255, 0);
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active {
+    background: lightslategray;
 }
