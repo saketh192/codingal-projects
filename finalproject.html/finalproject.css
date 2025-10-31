@@ -112,7 +112,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #7096cff8;
+    background-color: #afb8caf8;
     font-family: Arial, sans-serif;
 }
 
@@ -140,14 +140,14 @@ footer {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 12px;
     width: 100%;
 }
 
 button {
     padding: 15px;
     font-size: 18px;
-    background: white;
+    background: rgb(255, 255, 255);
     color: black;
     border: none;
     border-radius: 5px;
@@ -155,5 +155,13 @@ button {
 }
 
 button:active {
-    background: lightslategray;
+    background: rgb(104, 104, 117);
+}
+
+.operator {
+    background-color: orange;
+}
+
+.different {
+    background-color: rgb(0, 255, 0);
 }
