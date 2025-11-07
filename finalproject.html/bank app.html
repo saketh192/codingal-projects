@@ -2,111 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank App (Functions Only)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank App (Functions Only)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-        .bank-container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
+    .bank-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
 
-        h2 {
-            margin-bottom: 20px;
-        }
+    h2 {
+      margin-bottom: 20px;
+    }
 
-        input {
-            width: 90%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
 
-        button {
-            width: 45%;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            color: white;
-        }
+    button {
+      width: 45%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+    }
 
-        #creditBtn {
-            background-color: #28a745;
-        }
+    #creditBtn {
+      background-color: #28a745;
+    }
 
-        #debitBtn {
-            background-color: #dc3545;
-        }
+    #debitBtn {
+      background-color: #dc3545;
+    }
 
-        button:hover {
-            opacity: 0.9;
-        }
+    button:hover {
+      opacity: 0.9;
+    }
 
-        h3 {
-            margin-top: 20px;
-            color: #333;
-        }
-    </style>
+    h3 {
+      margin-top: 20px;
+      color: #333;
+    }
+  </style>
 </head>
 
 <body>
 
-    <div class="bank-container">
-        <h2>💰 Simple Bank App</h2>
-        <input type="number" id="amount" placeholder="Enter amount">
-        <div>
-            <button id="creditBtn" onclick="credit()">Credit</button>
-            <button id="debitBtn" onclick="debit()">Debit</button>
-        </div>
-        <h3>Current Balance: ₹<span id="balance">0</span></h3>
+  <div class="bank-container">
+    <h2>💰 Simple Bank App</h2>
+    <input type="number" id="amount" placeholder="Enter amount">
+    <div>
+      <button id="creditBtn" onclick="credit()">Credit</button>
+      <button id="debitBtn" onclick="debit()">Debit</button>
     </div>
+    <h3>Current Balance: ₹<span id="balance">0</span></h3>
+  </div>
 
-    <script>
-        let balance = 0;
+  <script>
+    let balance = 0;
 
-        function credit() {
-            let amount = parseFloat(document.getElementById("amount").value);
-            if (isNaN(amount) || amount <= 0) {
-                alert("Please enter a valid amount");
-                return;
-            }
-            balance += amount;
-            document.getElementById("balance").innerText = balance.toFixed(2);// to make the balance look clear i used to fixed property which round off the number and make the number look clear 
-            document.getElementById("amount").value = "";
-        }
+    function credit() {
+      let amount = parseFloat(document.getElementById("amount").value);
+      if (isNaN(amount) || amount <= 0) {
+        alert("Please enter a valid amount");
+        return;
+      }
+      balance += amount;
+      document.getElementById("balance").innerText = balance.toFixed(2);
+      document.getElementById("amount").value = "";
+    }
 
-        function debit() {
-            let amount = parseFloat(document.getElementById("amount").value);
-            if (isNaN(amount) || amount <= 0) {//NaN is not a number
-                alert("Please enter a valid amount");
-                return;
-            }
-            if (amount > balance) {
-                alert("Insufficient balance!");
-                return;
-            }
-            balance -= amount;
-            document.getElementById("balance").innerText = balance.toFixed(2);
-            document.getElementById("amount").value = "";
-        }
-    </script>
+    function debit() {
+      let amount = parseFloat(document.getElementById("amount").value);
+      if (isNaN(amount) || amount <= 0) {
+        alert("Please enter a valid amount");
+        return;
+      }
+      if (amount > balance) {
+        alert("Insufficient balance!");
+        return;
+      }
+      balance -= amount;
+      document.getElementById("balance").innerText = balance.toFixed(2);
+      document.getElementById("amount").value = "";
+    }
+  </script>
 
 </body>
 
