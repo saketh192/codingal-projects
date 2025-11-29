@@ -37,16 +37,23 @@ print("the original dictionary is :", my_dict)
 print("the value of the key name is :", my_dict["name"])
 print("the value of the key age is :", my_dict["age"])
 
-my_dict['state'] = 'newyork'
+my_dict["state"] = "newyork"
+
 
 # activity_3
 def test(lst1):
     result = {}
     for item in lst1:
-        result [item[0] = item[1:]]
+        result[item[0] == item[1:]]
     return result
-student_list = [('john' , 35 , 'newyork') , ('jane' , 30 , 'los angeles') , ('paul' , 20 , 'chicago')]
+
+
+student_list = [
+    ("john", 35, "newyork"),
+    ("jane", 30, "los angeles"),
+    ("paul", 20, "chicago"),
+]
 
 print(test(student_list))
-print("/n original list of lists is :" , student_list )
-print("convert the said list of list in the dictionary ;" , student_list)
+print("/n original list of lists is :", student_list)
+print("convert the said list of list in the dictionary ;", student_list)
