@@ -44,7 +44,7 @@ my_dict["state"] = "newyork"
 def test(lst1):
     result = {}
     for item in lst1:
-        result[item[0] == item[1:]]
+        result[item[0]] = item[1:]
     return result
 
 
