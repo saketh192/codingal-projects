@@ -1,20 +1,27 @@
-class ExpressionSolver:
-    def __init__(self, expression):
-        self.expression = expression
+class Human:
+    def __init__(self, name):
+        self.name = name
+        self.emotion = None
 
-    def solve(self):
-        try:
-            result = eval(self.expression)
-            return result
-        except Exception as e:
-            return f"Error: {e}"
+    def set_emotion(self, emotion):
+        self.emotion = emotion
 
+    def express(self):
+        if self.emotion is None:
+            print(f"{self.name} is not showing any expression yet.")
+        else:
+            print(f"{self.name} is feeling {self.emotion}.")
 
-# Taking input from the user
-expr = input("Enter a mathematical expression: ")
 
 # Creating object
-solver = ExpressionSolver(expr)
+person = Human("Alex")
 
-# Printing the result
-print("Result:", solver.solve())
+# Setting emotions
+person.set_emotion("happy")
+person.express()
+
+person.set_emotion("sad")
+person.express()
+
+person.set_emotion("angry")
+person.express()
