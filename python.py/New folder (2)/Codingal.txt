@@ -1,0 +1,2 @@
+File in mode ....Hi i am penguin  , I am 1 year old
+ File in append mode ....Hi i am penguin  , I am 1 year old

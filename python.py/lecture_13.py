@@ -1,20 +1,32 @@
 # File handling
 # Acitivity_1 and 2
-file_read = open("Codingal.txt", "r")
+file_read = open(
+    r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\\Codingal.txt",
+    "r",
+)
 print("File in read mode - ")
 print(file_read.read())
 file_read.close()
-file_write = open("Codingal.txt", "w")
+file_write = open(
+    r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\Codingal.txt",
+    "w",
+)
 file_write.write("File in mode ....")
 file_write.write("Hi i am penguin  , I am 1 year old")
 file_write.close()
-file_append = open("Codingal.txt", "a")
+file_append = open(
+    r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\\Codingal.txt",
+    "a",
+)
 file_append.write("\n File in append mode ....")
 file_append.write("Hi i am penguin  , I am 1 year old")
 file_append.close()
 
 # Acitivity_3
-file = open("Codingal.txt", "r")
+file = open(
+    r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\\Codingal.txt",
+    "r",
+)
 counter = 0
 content = file.read()
 colist = content.split("\n")
