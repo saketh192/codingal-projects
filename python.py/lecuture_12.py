@@ -23,7 +23,7 @@ class dog:
         print("bark")
 
 
-cat1 = cat("dodo", 2, 5)
+cat1 = cat("dodo", 2)
 dog1 = dog("tyson", 9)
 
 for animal in (cat1, dog1):
