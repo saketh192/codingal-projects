@@ -1,6 +1,6 @@
 # Open the file in read mode
 file = open(
-    r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\\Codingal.txt",
+    r"D:\OneDrive - SBaisakh\OneDrive\Documents\codingal-projects\python.py\New folder (2)\Codingal.txt",
     "r",
 )
 
@@ -12,7 +12,7 @@ file.close()
 
 # Open again because the file pointer is at the end
 file = open(
-    r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\\Codingal.txt",
+    r"D:\OneDrive - SBaisakh\OneDrive\Documents\codingal-projects\python.py\New folder (2)\Codingal.txt",
     "r",
 )
 
@@ -24,7 +24,7 @@ file.close()
 
 # Open again
 file = open(
-    r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\\Codingal.txt",
+    r"D:\OneDrive - SBaisakh\OneDrive\Documents\codingal-projects\python.py\New folder (2)\Codingal.txt",
     "r",
 )
 
@@ -37,7 +37,7 @@ file.close()
 
 # Open again
 file = open(
-    r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\\Codingal.txt",
+    r"D:\OneDrive - SBaisakh\OneDrive\Documents\codingal-projects\python.py\New folder (2)\Codingal.txt",
     "r",
 )
 

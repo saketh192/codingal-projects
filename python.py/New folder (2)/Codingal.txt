@@ -1,2 +1,3 @@
-File in mode ....Hi i am penguin  , I am 1 year old
- File in append mode ....Hi i am penguin  , I am 1 year old
+Python is easy to learn
+File handling is important
+Split method is useful
