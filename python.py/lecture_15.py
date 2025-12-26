@@ -25,3 +25,12 @@ file = open(
 words = content.split()
 print("\nWords after split:")
 print(words)
+
+import os
+
+filename = r"D:\\OneDrive - SBaisakh\\OneDrive\Documents\\codingal-projects\\python.py\\New folder (2)\\Codingal.txt"
+
+if os.path.exists(filename):
+    print("Activity: File already exists.")
+else:
+    print("Activity: File does not exist.")
